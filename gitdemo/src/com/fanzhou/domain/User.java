@@ -4,14 +4,16 @@ public class User {
     private String name;
     private int age;
     private String address;
+    private String telephoneNum;
 
     public User() {
     }
 
-    public User(String name, int age, String address) {
+    public User(String name, int age, String address, String telephoneNum) {
         this.name = name;
         this.age = age;
         this.address = address;
+        this.telephoneNum = telephoneNum;
     }
 
     public String getName() {
@@ -38,12 +40,21 @@ public class User {
         this.address = address;
     }
 
+    public String getTelephoneNum() {
+        return telephoneNum;
+    }
+
+    public void setTelephoneNum(String telephoneNum) {
+        this.telephoneNum = telephoneNum;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", address='" + address + '\'' +
+                ", telephoneNum='" + telephoneNum + '\'' +
                 '}';
     }
 }
