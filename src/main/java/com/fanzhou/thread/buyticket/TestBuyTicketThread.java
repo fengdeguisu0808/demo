@@ -7,9 +7,9 @@ package com.fanzhou.thread.buyticket;
 public class TestBuyTicketThread {
     public static void main(String[] args) {
         BuyTicketThread buyTicketThread = new BuyTicketThread();
-        new Thread(buyTicketThread,"范舟").start();
-        new Thread(buyTicketThread,"朱金玲").start();
-        new Thread(buyTicketThread,"范露").start();
-        new Thread(buyTicketThread,"范卓").start();
+        new Thread(buyTicketThread,"xiaoming").start();
+        new Thread(buyTicketThread,"xiaohong").start();
+        new Thread(buyTicketThread,"xiaohua").start();
+        new Thread(buyTicketThread,"xiaofang").start();
     }
 }
